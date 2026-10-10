@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Image Vault",
+  "version": "1.5",
+  "description": "Save, name, and store images directly inside the extension database via right-click.",
+  "action": {
+    "default_title": "Open Image Vault"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

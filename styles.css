@@ -1,0 +1,146 @@
+body {
+  width: 320px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.secondary-btn {
+  background-color: #6c757d;
+  font-size: 11px;
+  padding: 5px;
+}
+
+.secondary-btn:hover {
+  background-color: #545b62;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+#imageGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.image-card {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 14px;
+  word-break: break-all;
+  padding-right: 8px;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  cursor: pointer;
+  width: auto;
+  margin: 0;
+}
+
+.delete-btn:hover {
+  background-color: #bd2130;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.action-btn {
+  flex: 1;
+  font-size: 11px;
+  padding: 6px 4px;
+  margin: 0;
+}
+
+.copy-btn {
+  background-color: #28a745;
+}
+
+.copy-btn:hover {
+  background-color: #218838;
+}
+
+.download-btn {
+  background-color: #17a2b8;
+}
+
+.download-btn:hover {
+  background-color: #138496;
+}
+/* Add this at the very bottom of your styles.css file */
+.vault-img {
+  cursor: grab;
+  transition: opacity 0.15s ease;
+}
+
+.vault-img:active {
+  cursor: grabbing;
+}
+
+.vault-img.dragging {
+  opacity: 0.4;
+}
+
